@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+	
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,10 +15,16 @@
 
 </head>
 <body>
+
 <div class="text-center">
 		<div class="jumbotron">
-			<h1>Γεια σου, <%= request.getParameter("onoma")%> <%= request.getParameter("onoma2")%></h1>
+			<h1>Γεια σου, ${uname} ${uname2}</h1>
 		</div>
+		
+		<form action="LogoutCheck" method="POST">
+
+					<button class="btn btn-outline-success " type="submit">Log out</button>
+				</form>	
 	</div>
 </body>
 </html>

@@ -10,8 +10,6 @@
 
 <link rel="stylesheet" href="css/bootstrap.css">
 
-
-
 <title>Γεια σου!</title>
 
 </head>
@@ -20,6 +18,21 @@
 
 <div class="container">
 	<br>
+	<nav class="navbar navbar-expand-sm bg-light">
+		<ul class="navbar-nav">
+			<li class="nav-item"><a class="navbar-brand"> Username: ${uname}</a></li>
+			<li class="nav-item">
+				<form action="LogoutCheck" method="POST">
+
+					<button class="btn btn-outline-success " type="submit">Log out</button>
+				</form>
+			</li>
+
+		</ul>
+	</nav>
+	<br>
+	<br>
+	
 	<h2>Πληκτρολόγησε το ονομα σου:</h2>
 	
 	<form action="NameCheck" method="POST">
