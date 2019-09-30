@@ -34,7 +34,7 @@ public class LoginCheck extends HttpServlet {
 			newSession.setAttribute("uname", name);
 			newSession.setAttribute("ucode", code);
 			
-			response.sendRedirect("giveyourname.jsp");
+			response.sendRedirect("ArtistsList.jsp");
 
 		} else {
 
